@@ -38,6 +38,30 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes entry_nav {
+  from {
+    top: -150px;
+    opacity: 0;
+    display: flex;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+    display: flex;
+  }
+}
+@keyframes entry_nav {
+  from {
+    top: -150px;
+    opacity: 0;
+    display: flex;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+    display: flex;
+  }
+}
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -49,6 +73,8 @@ header {
   padding: 15px;
   position: relative;
   top: 0;
+  -webkit-animation: entry_nav 800ms ease-out;
+          animation: entry_nav 800ms ease-out;
 }
 
 li {

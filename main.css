@@ -3,6 +3,7 @@
 }
 
 body {
+  position: relative;
   font-family: "Poppins", sans-serif;
   margin: 2em;
 }
@@ -17,10 +18,15 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-ul {
-  display: none;
+.center-links {
+  transform: translateY(-200px);
+}
+
+.right-links {
+  transform: translateY(-200px);
 }
 
 .logo {
@@ -37,7 +43,7 @@ ul {
 
 .message {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 3.7rem;
 }
 
@@ -50,7 +56,70 @@ img {
 .pictures {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 21%;
-  gap: 11rem;
+  grid-auto-columns: 7%;
+  gap: 12rem;
   overflow-x: auto;
+}
+
+.pics {
+  transform: translateY(500px);
+}
+
+@media only screen and (min-width: 990px) {
+  .menu {
+    display: none;
+  }
+  .center-links {
+    transform: translate(0, 0);
+  }
+  .right-links {
+    transform: translate(0, 0);
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+  ul li {
+    padding-left: 2em;
+  }
+  .free {
+    background-color: black;
+    color: white;
+    padding: 1em 3em;
+    border-radius: 2rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-around;
+  }
+  .pictures {
+    display: none;
+  }
+  .pics {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    transform: translateY(0);
+  }
+  .pic {
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 5rem;
+    height: 32rem;
+    background-position: center top;
+    background-size: auto 100%;
+    transition: width 700ms ease;
+  }
+  .pic:hover {
+    width: 20rem;
+  }
+  .message {
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=main.css.map */

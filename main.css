@@ -2,6 +2,23 @@
   --primary-color: rgb(151, 198, 128);
 }
 
+@-webkit-keyframes mobileIntro {
+  from {
+    top: 50px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes mobileIntro {
+  from {
+    top: 50px;
+  }
+  to {
+    top: 0;
+  }
+}
 body {
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -39,6 +56,8 @@ header {
 
 .container {
   display: block;
+  -webkit-animation: mobileIntro 2s ease forwards;
+          animation: mobileIntro 2s ease forwards;
 }
 
 .message {

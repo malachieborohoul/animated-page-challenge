@@ -1,6 +1,15 @@
 :root{
   --primary-color: rgb(151, 198, 128);
 }
+@keyframes mobileIntro {
+  from{
+    top: 50px
+  }
+
+  to{
+    top: 0;
+  }
+}
 body{
   position: relative;
   font-family: 'Poppins', sans-serif;
@@ -42,6 +51,7 @@ header{
 }
 .container{
   display: block;
+  animation: mobileIntro 2s ease forwards ;
 }
 
 .message{

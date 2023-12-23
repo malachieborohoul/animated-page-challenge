@@ -1,5 +1,5 @@
 # animated-page-challenge
-# CSS is ma
+# CSS is m
 An animated UI done with only HTML and CSS without javascript.
 
 <img src="" alt="">
